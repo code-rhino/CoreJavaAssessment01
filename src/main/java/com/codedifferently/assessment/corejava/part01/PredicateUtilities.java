@@ -6,7 +6,10 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of 2
      */
     public Boolean isEven(Integer value) {
-        return null;
+        if (value % 2 == 0) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -14,16 +17,25 @@ public class PredicateUtilities {
      * @return true if `value` is not a multiple of 2
      */
     public Boolean isOdd(Integer value) {
-        return null;
+        if (value % 2 != 0) {
+            return true;
+        }
+        return false;
     }
+
+
 
     /**
      * @param value - the value to be evaluated
      * @return true if `value` is a multiple of 3
      */
     public Boolean isMultipleOf3(Integer value) {
-        return null;
+        if (value % 3 == 0) {
+            return true;
+        }
+        return false;
     }
+
 
     /**
      *
@@ -32,14 +44,21 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of `multiple`
      */
     public Boolean isMultipleOfN(Integer value, Integer multiple) {
-        return null;
+        if (value % multiple == 0) {
+            return true;
+        }
+        return false;
     }
+
 
     /**
      * @param string - the string to be evaluated
      * @return true if `string` starts with a capital letter
      */
     public Boolean startsWithCapitalLetter(String string) {
-        return null;
+        if(Character.isUpperCase(string.charAt(0))){
+            return true;
+        }
+        return false;
     }
 }
