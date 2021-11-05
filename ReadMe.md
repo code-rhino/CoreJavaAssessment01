@@ -2,7 +2,7 @@
 
 ## Part 1
 
-In part one you have a class called `PredicateUtilities`, the method's are all returning null. You have to complete all of these classes so that the test in `PredicateUtilitiesTest` all pass!
+In part one you have a class called `PredicateUtilities`, the methods are all returning null. You have to complete all of these classes so that the test in `PredicateUtilitiesTest` all pass!
 
 ### Problem 01 : isEven 
 
