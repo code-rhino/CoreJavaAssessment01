@@ -200,23 +200,31 @@ In part one you have a class called `IntegerArrayUtils`, the method's are all re
 ```
 ## Part 4
 
+![](./uml.png)
+
 Create the following animals, with UNIT TEST!!!!!:
 
 1. Create `Horse` is a concrete class which implements Animal.
-    - `move` will return the string `"gallop"`
-    - `color` will return the string `"brown"` (Yes I am aware not all horses are brown.)
-    - `getSpeed` will return `40`
+    - `move` the constructor will set as the string `"gallop"`
+    - `color` will set the string color.
+    - `speed` will set its speed.
 2. Create `Bird` is an abstract class that implements Animal.
-    - `move` will return the string `"fly"` (Yes I am aware not all birds fly.)
+    - `move` the constructor will set as the string `"fly"` (Yes I am aware not all birds fly.)
 3. Create `BlueJay` is a concrete class which extends from Bird
-    - `color` will return the string `"blue"`
-    - `speed` will return `13`
+    - `color` the constructor will set as the string `"blue"`
+    - `speed` will set its speed
 4. Create `RedRobin` is a concrete class which extends from Bird
-    - `color` will return the string `"red"`
-    - `speed` will return `10`
-    - Add a `String migrationMonth` field. Add a getter and setter for it.
+    - `color` the constructor will set as the string `"blue"`
+    - `speed`  will set its speed
+5. Create a SpeedComparator class. The class should implement `Comparator<Animal>`
+6. Implements the `int compare(Animal animal1, Animal animal2)` method
+  1. If animal1's and animal2's speed are the same, then return 0
+  2. If animal1's speed is greater than animal2 speed, then return a negative number
+  3. If animal1's speed is less than animal2 speed, then return a positive number 
 
-## Part 5 - The harmless ransom note
+[Help using the Comparator in Java](https://www.tutorialspoint.com/java/java_using_comparator.htm)
+
+## Part 5 - The harmless ransom note 
 
 The harmless ransom note is simply a note made of words cut out from a magazine text, Imagine that a kidnapper wants to write a ransom note and he doesn't want it to be handwritten and be traced back to him so he got a magazine and cuts off a whole word and use them to create an untraceable replica of his ransom note.
 
