@@ -1,10 +1,12 @@
 package com.codedifferently.assessment.corejava.part02;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class IntegerArrayUtilsTest {
     @Test
+
     public void testAdd1() {
         // given
         Integer valueToBeAdded = 10;
@@ -161,6 +163,7 @@ public class IntegerArrayUtilsTest {
     }
 
     @Test
+    @DisplayName("replace method test")
     public void testInsert1() {
         // Given
         Integer indexToInsertAt = 3;

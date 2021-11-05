@@ -14,7 +14,7 @@ public class PredicateUtilitiesTest {
 
     @Test
     public void isEvenTest1() {
-        Integer value = 0;
+        Integer value = 2;
         Boolean expected = predicateUtilities.isEven(value);
         Assertions.assertTrue(expected);
     }
@@ -22,8 +22,8 @@ public class PredicateUtilitiesTest {
     @Test
     public void isEvenTest2() {
         Integer value = 1;
-        Boolean expected = predicateUtilities.isEven(value);
-        Assertions.assertFalse(expected);
+        Boolean expected = predicateUtilities.isOdd(value);
+        Assertions.assertTrue(expected);
     }
 
     @Test
@@ -42,9 +42,9 @@ public class PredicateUtilitiesTest {
 
     @Test
     public void isMultipleOf3Test1() {
-        Integer value = 1;
+        Integer value = 9;
         Boolean expected = predicateUtilities.isMultipleOf3(value);
-        Assertions.assertFalse(expected);
+        Assertions.assertTrue(expected);
     }
 
     @Test
