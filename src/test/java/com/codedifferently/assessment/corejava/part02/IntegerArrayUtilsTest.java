@@ -161,7 +161,7 @@ public class IntegerArrayUtilsTest {
     }
 
     @Test
-    public void testInsert1() {
+    public void testReplace1() {
         // Given
         Integer indexToInsertAt = 3;
         Integer valueToBeInserted = 12;
@@ -176,7 +176,7 @@ public class IntegerArrayUtilsTest {
     }
 
     @Test
-    public void testInsert2() {
+    public void testReplace2() {
         // Given
         Integer valueToBeInserted = 82;
         Integer indexToInsertAt = 0;
