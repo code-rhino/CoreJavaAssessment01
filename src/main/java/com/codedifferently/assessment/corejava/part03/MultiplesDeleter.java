@@ -7,7 +7,24 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with evens removed
      */
     public Integer[] deleteEvens(Integer[] ints) {
-        return null;
+        int oddC = 0;
+        for (int i = 0; i < ints.length; i++) {
+            if (ints[i] % 2 != 0) {
+                oddC++;
+            }
+        }
+            Integer[] newInts = new Integer[oddC];
+            for (int j = 0; j < ints.length; j++) {
+                int b;
+                if (ints[j] % 2 != 0) {
+                    b =ints[j];
+                    newInts[j] = b;
+                }
+
+            }
+
+
+        return newInts;
     }
 
     /**
@@ -15,7 +32,7 @@ public class MultiplesDeleter {
      * @return all ints which are divisible by 2
      * given an array of integers, named `ints` return an identical array with odds removed
      */
-    public Integer[] deleteOdds(Integer[] ints) {
+   public Integer[] deleteOdds(Integer[] ints) {
         return null;
     }
 
