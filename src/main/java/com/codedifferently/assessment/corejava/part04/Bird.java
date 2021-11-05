@@ -8,9 +8,14 @@ public abstract class Bird implements Animal {
     private Integer speed;
 
     public Bird(String color, Integer speed){
-        move = "fly";
         this.color = color;
         this.speed = speed;
+        this.move = "fly";
+    }
+
+    public Bird(){
+        color = "";
+      //  speed = 0;
     }
 
     public String getColor() {
