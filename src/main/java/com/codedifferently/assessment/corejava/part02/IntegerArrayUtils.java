@@ -1,5 +1,7 @@
 package com.codedifferently.assessment.corejava.part02;
 
+import java.util.Arrays;
+
 public class IntegerArrayUtils {
     /**
      * @param integerArray - array to have value added to it
@@ -7,7 +9,12 @@ public class IntegerArrayUtils {
      * @return - identical array with one additional element of `valueToBeAdded` at the end of the array
      */
     public static Integer[] add(Integer[] integerArray, Integer valueToBeAdded) {
-        return null;
+        Integer[] newArray = new Integer[integerArray.length + 1];
+        for ( int i = 0; i < integerArray.length; i++){
+            newArray[i] = integerArray[i];
+        }
+        newArray[newArray.length-1] = valueToBeAdded;
+        return newArray;
     }
 
     /**
@@ -17,7 +24,8 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
-        return null;
+        integerArray[indexToInsertAt] = valueToBeInserted;
+        return integerArray;
     }
 
     /**
