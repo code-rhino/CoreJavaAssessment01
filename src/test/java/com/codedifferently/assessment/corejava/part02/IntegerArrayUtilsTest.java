@@ -166,7 +166,7 @@ public class IntegerArrayUtilsTest {
         Integer indexToInsertAt = 3;
         Integer valueToBeInserted = 12;
         Integer[] input = {1,2,5,8};
-        Integer[] expected = {1,2,5,valueToBeInserted};
+        Integer[] expected = {1,2,5,12};
 
         // when
         Integer[] actual = IntegerArrayUtils.replace(input, indexToInsertAt, valueToBeInserted);
